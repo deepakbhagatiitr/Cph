@@ -1,0 +1,47 @@
+{
+  "name": "cph",
+  "displayName": "cph",
+  "description": "cph leetcode",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cph.fetchLeetCodeTestCases",
+        "title": "CPH: Fetch LeetCode Test Cases"
+      },
+      {
+        "command": "cph.runTestCases",
+        "title": "CPH: Run Test Cases"
+      },
+      {
+        "command": "cod.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.96.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.16.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cph": "file:"
+  }
+}
