@@ -93,13 +93,13 @@ class LeetcodeHandler {
         const tempInputPath = path.join(this.workspaceRoot, 'temp_input.txt');
         const tempOutputPath = path.join(this.workspaceRoot, 'temp_output.txt');
 
-        // Extract array and target
+
         const arrayMatch = input.match(/\[(.*?)\]/);
         const targetMatch = input.match(/\d+$/);
-        
-        // Format input based on language
+
+
         const formattedInput = `[${arrayMatch[1]}]\n${targetMatch[0]}`;
-        
+
         fs.writeFileSync(tempInputPath, formattedInput);
         console.log(`Formatted input for ${language}: ${formattedInput}`);
 
@@ -110,7 +110,7 @@ class LeetcodeHandler {
 
                 fs.writeFileSync(tempCppFilePath, solutionCode);
 
-                // Compile with enhanced error handling
+
                 exec(`g++ "${tempCppFilePath}" -o "${tempExecutablePath}" -std=c++17`, (compileError, stdout, stderr) => {
                     if (compileError) {
                         console.error('C++ compilation error:', stderr);
@@ -118,7 +118,7 @@ class LeetcodeHandler {
                         return;
                     }
 
-                    // Execute with proper input handling
+
                     exec(`"${tempExecutablePath}" < "${tempInputPath}" > "${tempOutputPath}"`, (runError, stdout, stderr) => {
                         if (runError) {
                             console.error('C++ runtime error:', stderr);

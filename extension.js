@@ -9,7 +9,7 @@ function activate(context) {
     let fetchTestCasesCommand = vscode.commands.registerCommand(
         'cph.fetchLeetCodeTestCases',
         async () => {
-            // First, prompt for the language selection
+
             const language = await vscode.window.showQuickPick(['cpp', 'py'], {
                 placeHolder: 'Select the programming language you are using'
             });
@@ -18,10 +18,10 @@ function activate(context) {
                 return;
             }
 
-            // Then, prompt for the title slug
+
             const titleSlug = await vscode.window.showInputBox({ prompt: 'Enter the title slug of the LeetCode problem' });
             if (titleSlug) {
-                leetcodeHandler.fetchTestCases(titleSlug, language); // Pass the selected language
+                leetcodeHandler.fetchTestCases(titleSlug, language);
             } else {
                 vscode.window.showErrorMessage('Title slug is required to fetch test cases.');
             }
@@ -31,7 +31,7 @@ function activate(context) {
     let runTestCasesCommand = vscode.commands.registerCommand(
         'cph.runTestCases',
         async () => {
-            // First, prompt for the language selection
+
             const language = await vscode.window.showQuickPick(['cpp', 'py'], {
                 placeHolder: 'Select the programming language you are using'
             });
@@ -40,10 +40,10 @@ function activate(context) {
                 return;
             }
 
-            // Then, prompt for the title slug
+
             const titleSlug = await vscode.window.showInputBox({ prompt: 'Enter the title slug of the LeetCode problem' });
             if (titleSlug) {
-                leetcodeHandler.runTestCases(titleSlug, language); // Pass the selected language
+                leetcodeHandler.runTestCases(titleSlug, language);
             } else {
                 vscode.window.showErrorMessage('Title slug is required to run test cases.');
             }
