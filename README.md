@@ -184,26 +184,3 @@ Contributions are welcome! To contribute:
 
 ---
 
-## License
-
-This project is licensed under the MIT License. For more details, see the [LICENSE](LICENSE) file in the repository.
-
----
-
-## Contact
-
-For issues, feature requests, or contributions, feel free to reach out:
-
-- **GitHub Issues**: [Create an Issue](https://github.com/chandrakant1212/cph/issues)
-- **Maintainer**: Chandrakant
-
----
-
-Enhance your competitive programming journey with **CodeCracker**! 🚀
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
