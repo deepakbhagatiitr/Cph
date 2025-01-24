@@ -50,12 +50,11 @@
 ### Steps  
 1. Clone the repository:  
    ```bash  
-   git clone 
-https://github.com/deepakbhagatiitr/Cph  
+   git clone https://github.com/deepakbhagatiitr/Cph.git  
    ```  
 2. Navigate to the project folder:  
    ```bash  
-   cd cph  
+   cd Cph  
    ```  
 3. Install dependencies:  
    ```bash  
@@ -189,4 +188,4 @@ For additional help, open an issue on the repository.
 
 ---
 
-**CodeCracker**: Simplifying problem-solving for competitive programmers.
+**CodeCracker**: Simplifying problem-solving for competitive programmers.  
