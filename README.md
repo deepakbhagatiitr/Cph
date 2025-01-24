@@ -1,4 +1,4 @@
-# CodeCracker Extension (CPH - Competitive Programming Helper)
+# (CPH - Competitive Programming Helper)
 
 **CodeCracker** is a Visual Studio Code extension designed to assist competitive programmers in solving problems on LeetCode by automatically fetching test cases and validating solutions. This extension simplifies the process of fetching problem statements, generating test cases, and running solutions locally against those test cases. It provides support for languages like Python and C++ while enabling seamless integration with LeetCode for efficient problem-solving workflows.
 
